@@ -36,7 +36,7 @@ function nextMove() {
     $("#level-title").text(`Level ${targetMoves.length}`);
 
     // Indicate the next move on the UI
-    animatePress($(`.btn.${move}`));
+    animatePress($(`#${move}`));
     playSound(move);
 
     // Clear the player moves ready for their input
