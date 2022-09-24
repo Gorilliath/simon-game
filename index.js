@@ -10,6 +10,10 @@ function playSound(sound) {
     sound.play();
 }
 
+$("h1").on("click", function () {
+    animatePress(this);
+});
+
 $(".btn").on("click", function () {
     animatePress(this);
     playSound($(this).prop("id"));
