@@ -64,6 +64,14 @@ function evaluatePlayerMove(move) {
 
 function gameOver() {
     $("#level-title").text("Gameover! Press here to play again!");
+
+    $("body").addClass("game-over");
+    setTimeout(() => {
+        $("body").removeClass("game-over");
+    }, 300);
+
+    playSound("wrong");
+
     gameInProgress = false;
 }
 
