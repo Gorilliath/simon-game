@@ -1,4 +1,5 @@
 .git
 .vite
 .vscode
+.prettierrc
 *.code-workspace
